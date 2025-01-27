@@ -24,6 +24,9 @@ make
     
     -DWITH_HTTPD=OFF 不用内置HTTP服务器和API构建。
 
+#### 其他系统编译方法查看官方说明
+
+https://github.com/xmrig/xmrig-proxy/wiki/Build
 
 #### 【后面是官方文档】
 
