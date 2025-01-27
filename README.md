@@ -1,10 +1,31 @@
 # XMRig Proxy
-[![Github All Releases](https://img.shields.io/github/downloads/xmrig/xmrig-proxy/total.svg)](https://github.com/xmrig/xmrig-proxy/releases)
-[![GitHub release](https://img.shields.io/github/release/xmrig/xmrig-proxy/all.svg)](https://github.com/xmrig/xmrig-proxy/releases)
-[![GitHub Release Date](https://img.shields.io/github/release-date-pre/xmrig/xmrig-proxy.svg)](https://github.com/xmrig/xmrig-proxy/releases)
-[![GitHub license](https://img.shields.io/github/license/xmrig/xmrig-proxy.svg)](https://github.com/xmrig/xmrig-proxy/blob/master/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/xmrig/xmrig-proxy.svg)](https://github.com/xmrig/xmrig-proxy/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/xmrig/xmrig-proxy.svg)](https://github.com/xmrig/xmrig-proxy/network)
+
+#### 去掉捐赠抽水，以及把捐赠钱包地址替换为自己的（以防万一）
+
+### 自己编译方法
+
+Ubuntu 16.04 Xenial Xerus
+
+sudo apt install git build-essential cmake libuv1-dev uuid-dev libmicrohttpd-dev libssl-dev
+
+git clone https://github.com/xinvhost/xmrig-proxy.git
+
+mkdir xmrig-proxy/build
+
+cd xmrig-proxy/build
+
+cmake ..
+
+make
+
+其他CMAKE选项
+
+    -DUV_LIBRARY=/usr/lib/x86_64-linux-gnu/libuv.a 使用静态Libuv版本。
+    
+    -DWITH_HTTPD=OFF 不用内置HTTP服务器和API构建。
+
+
+#### 【后面是官方文档】
 
 Extremely high performance Monero (XMR) Stratum protocol proxy, can easily handle over 100K connections on cheap $5 (1024 MB) virtual machine. Reduce number of pool connections up to 256 times, 100K workers become just 391 worker on pool side. Written on C++/libuv same as [XMRig](https://github.com/xmrig/xmrig) miner.
 
