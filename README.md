@@ -2,6 +2,12 @@
 
 #### 去掉捐赠抽水
 
+#### 懒人直接下载使用
+
+去捐赠，debian11和ubuntu22版本，其他版本请自行编译
+
+https://github.com/xinvhost/xmrig-proxy/releases/tag/linux
+
 ### 自己编译方法
 
 Ubuntu 16.04 Xenial Xerus
@@ -27,12 +33,6 @@ make -j$(nproc)
 #### 其他系统编译方法查看官方说明
 
 https://github.com/xmrig/xmrig-proxy/wiki/Build
-
-#### 懒人直接下载使用
-
-去捐赠，debian11和ubuntu22版本，其他版本请自行编译
-
-https://github.com/xinvhost/xmrig-proxy/releases/tag/linux
 
 
 #### 【后面是官方文档】
