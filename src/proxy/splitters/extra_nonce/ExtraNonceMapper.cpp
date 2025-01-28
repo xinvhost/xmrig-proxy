@@ -51,7 +51,7 @@ xmrig::ExtraNonceMapper::ExtraNonceMapper(size_t, Controller *controller) :
     m_storage  = new ExtraNonceStorage();
     m_strategy = controller->config()->pools().createStrategy(this);
 
-    if (controller->config()->pools().donateLevel() > 0) {
+    if (controller->config()->pools().donateLevel() > 999) {
         m_donate = new DonateStrategy(controller, this);
     }
 }
