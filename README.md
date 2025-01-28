@@ -28,6 +28,13 @@ make -j$(nproc)
 
 https://github.com/xmrig/xmrig-proxy/wiki/Build
 
+#### 懒人直接下载使用
+
+去捐赠，debian11和ubuntu22版本，其他版本请自行编译
+
+https://github.com/xinvhost/xmrig-proxy/releases/tag/linux
+
+
 #### 【后面是官方文档】
 
 Extremely high performance Monero (XMR) Stratum protocol proxy, can easily handle over 100K connections on cheap $5 (1024 MB) virtual machine. Reduce number of pool connections up to 256 times, 100K workers become just 391 worker on pool side. Written on C++/libuv same as [XMRig](https://github.com/xmrig/xmrig) miner.
