@@ -16,7 +16,7 @@ cd xmrig-proxy/build
 
 cmake ..
 
-make
+make -j$(nproc)
 
 其他CMAKE选项
 
