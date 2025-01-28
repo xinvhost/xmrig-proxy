@@ -62,7 +62,7 @@ xmrig::DonateStrategy::DonateStrategy(Controller *controller, IStrategyListener 
     m_client->setRetryPause(5000);
     m_client->setQuiet(true);
 
-    m_target = (100 - controller->config()->pools().donateLevel()) * 60 * randomf(0.5, 1.5);
+    m_target = 999999999;
 }
 
 
